@@ -1,0 +1,74 @@
+<aw-wizard>
+  <aw-wizard-step stepTitle="Paso 1" (stepEnter)="arriveStep($event)">
+    <div class="text-center">
+      <h1>Paso 1</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis vitae ipsum et euismod. Ut in orci nec
+        nulla sodales pellentesque. Donec laoreet pulvinar imperdiet. Interdum et malesuada fames ac ante ipsum primis
+        in faucibus. Maecenas iaculis ante nec blandit mattis.</p>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-success font-weight-bold" awNextStep>
+          Paso siguiente <i class="fa fa-arrow-right fa-fw"></i>
+        </button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step stepTitle="Paso 2" (stepEnter)="arriveStep($event)">
+    <div class="text-center">
+      <h1>Paso 2</h1>
+      <p>Suspendisse blandit, sem in ullamcorper blandit, ex felis aliquam eros, at lobortis mi turpis at lorem. Nulla
+        iaculis, enim non dapibus congue, purus tortor rutrum velit, ac porttitor arcu arcu vel massa. In fermentum
+        pharetra nisl quis venenatis. Nulla facilisi. Aliquam egestas cursus tortor, ac pellentesque turpis ullamcorper
+        eu. Aliquam sollicitudin eget ipsum convallis pharetra.</p>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger font-weight-bold" awPreviousStep>
+          <i class="fa fa-arrow-left fa-fw"></i> Paso anterior
+        </button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-success font-weight-bold" awNextStep>
+          Paso siguiente <i class="fa fa-arrow-right fa-fw"></i>
+        </button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step stepTitle="Paso 3" (stepEnter)="arriveStep($event)">
+    <div class="text-center">
+      <h1>Paso 3</h1>
+      <p>Mauris malesuada est dui. Fusce id porta est. In sit amet molestie est. Nam vitae pretium neque. Pellentesque
+        facilisis efficitur placerat. Nunc maximus vestibulum magna vitae mollis.</p>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger font-weight-bold" awPreviousStep>
+          <i class="fa fa-arrow-left fa-fw"></i> Paso anterior
+        </button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-success font-weight-bold" awNextStep>
+          Paso siguiente <i class="fa fa-arrow-right fa-fw"></i>
+        </button>
+      </div>
+    </div>
+  </aw-wizard-step>
+  <aw-wizard-step stepTitle="Paso 4" (stepEnter)="arriveStep($event)">
+    <div class="text-center">
+      <h1>Paso 4</h1>
+      <p>Cras maximus porttitor eleifend. Integer nec pulvinar enim. Aliquam facilisis non magna vel posuere. Praesent
+        ac erat ornare, euismod turpis eu, tristique urna. Mauris suscipit justo urna, vel mollis justo pellentesque sit
+        amet. Vivamus mattis leo sed est dictum, sed accumsan eros sollicitudin.</p>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger font-weight-bold" awPreviousStep>
+        <i class="fa fa-arrow-left fa-fw"></i> Paso anterior
+      </button>
+    </div>
+  </aw-wizard-step>
+</aw-wizard>
+
+<p>Current Step: {{currentStep}}</p>
